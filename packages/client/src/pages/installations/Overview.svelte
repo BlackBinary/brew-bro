@@ -1,22 +1,24 @@
 <script lang="ts">
   import Datatable from "../../components/tables/Datatable.svelte";
+  import TextRow from "./TextRow.svelte";
+  import LinkRow from "./LinkRow.svelte";
 
   const tableHeaders = [
-    { title: "Naam", key: "name" },
-    { title: "Volume (L)", key: "volume" },
-    { title: "Bekijk/Bewerk", key: "view" },
+    { title: "Naam", key: "name", component: TextRow },
+    { title: "Volume (L)", key: "volume", component: TextRow },
+    { title: "Bekijk/Bewerk", key: "link", component: LinkRow },
   ];
 
   const tableData = [
     {
-      name: "Brewmonk Magnus",
-      volume: "45",
-      view: "1",
+      name: { text: "Brewmonk Magnus" },
+      volume: { text: "45" },
+      link: { text: "Bekijk/Bewerk", to: 'installations/1' },
     },
     {
-      name: "Grainfather G70",
-      volume: "70",
-      view: "2",
+      name: { text: "EzKettle" },
+      volume: { text: "30" },
+      link: { text: "Bekijk/Bewerk", to: 'installations/2' },
     },
   ];
 </script>

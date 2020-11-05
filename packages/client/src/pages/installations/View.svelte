@@ -38,11 +38,12 @@
   }
 
   export let params = {};
+  export let id: number = 0;
 </script>
 
 <div>
   <h3 class="text-gray-700 text-3xl font-semibold">
-    {installation.name || 'Installation name'}
+    #{id} {installation.name || 'Installation name'}
   </h3>
 
   <div class="mt-8 p-6 bg-white rounded-md shadow-md">

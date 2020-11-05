@@ -1,0 +1,25 @@
+{
+  "name": "brew-bro-server",
+  "version": "1.0.0",
+  "author": "Daen Rebel",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.14.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}

@@ -1,8 +1,6 @@
 <script lang="ts">
   import { sidebarOpen } from "./../store/";
 
-  console.log($sidebarOpen);
-
   let dropdownOpen = false;
 </script>
 
